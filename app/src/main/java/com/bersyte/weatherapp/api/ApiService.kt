@@ -8,7 +8,7 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("weather?q=astana&appid=60e3306eccdd8e512ae35a250bb1dc7b")
+    @GET("weather?q=astana&appid=60e3306eccdd8e512ae35a250bb1dc7b&units=metric&lang=ru")
     suspend fun getWeather(): Response<WeatherResponse>
 
 }

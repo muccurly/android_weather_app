@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
                 tvCityName.text = "Nur - sultaan"
                 tvDescription.text = weather.weather[0].description;
                 tvTemperature.text = weather.main?.temp.toString();
-                tvWind.text = weather.wind.toString();
+                tvWind.text ="${weather?.wind?.speed.toString()} км/ч";
             }
 
         })

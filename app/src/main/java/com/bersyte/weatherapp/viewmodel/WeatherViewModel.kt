@@ -30,6 +30,7 @@ constructor(private val repository: WeatherRepository) : ViewModel() {
 
             if (response.isSuccessful) {
                 _response.postValue(response.body())
+                Log.d("RESPONSE: ", response.body().toString());
             } else {
                 Log.d("tag", "getWeather Error: ${response.code()}")
             }

@@ -1,5 +1,5 @@
 package com.bersyte.weatherapp.utils
 
 object Constants {
-    const val BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
+    const val BASE_URL = "https://api.openweathermap.org/data/2.5/"
 }
